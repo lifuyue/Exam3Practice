@@ -226,13 +226,24 @@ def practice_problem3(start, n, threshold):
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   < 15 minutes.
     ####################################################################
+    # new_list = []
+    # count = 0
+    # for i in range(999999):
+    #     if count < n:
+    #         if math.sin(start + i) + math.cos(start + i) > threshold:
+    #             new_list += [start + i]
+    #             count += 1
+    #
+    # return new_list
+
     new_list = []
+    i = -1
     count = 0
-    for i in range(999999):
-        if count < n:
-            if math.sin(start + i) + math.cos(start + i) > threshold:
-                new_list += [start + i]
-                count += 1
+    while count < n:
+        i += 1
+        if math.sin(start + i) + math.cos(start + i) > threshold:
+            new_list += [start + i]
+            count += 1
 
     return new_list
 
