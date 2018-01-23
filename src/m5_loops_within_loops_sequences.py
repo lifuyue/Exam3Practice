@@ -31,7 +31,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    # run_test_integers()
+    run_test_integers()
     run_test_big_letters()
 
 
