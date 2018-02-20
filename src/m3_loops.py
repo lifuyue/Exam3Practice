@@ -109,6 +109,16 @@ def run_test_practice_problem3():
              st.SimpleTestCase(practice_problem3,
                                [0, 1, 1.414213562373],
                                [286602]),
+
+             # 15th test:
+             st.SimpleTestCase(practice_problem3,
+                               [-2, 2, 0],
+                               [0, 1]),
+
+             # 16th test:
+             st.SimpleTestCase(practice_problem3,
+                               [-2, 2, 1],
+                               [1, 7])
              ]
     # 14th test:
     big_list = []
@@ -134,16 +144,6 @@ def run_test_practice_problem3():
     # SUGGESTION: Ask an assistant to CHECK your tests to confirm
     #             that they are adequate tests!
     ####################################################################
-
-    # 15th test:
-    st.SimpleTestCase(practice_problem3,
-                      [-2, 2, 0],
-                      [-5, -4])
-
-    # 16th test:
-    st.SimpleTestCase(practice_problem3,
-                      [-2, 2, 1],
-                      [-5, 1])
 
 
 def practice_problem3(start, n, threshold):
